@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_logistics_order_form" model="ir.ui.view">
+        <field name="name">logistics.order.form</field>
+        <field name="model">logistics.order</field>
+        <field name="arch" type="xml">
+            <form string="Замовлення">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="supplier_id"/>
+                        <field name="customer_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Таблиця">
+                            <field name="order_table">
+                                <tree editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="price"/>
+                                    <field name="quantity"/>
+                                    <field name="products_sum"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group>
+                        <field name="total_amount"/>
+                        <field name="total_weight"/>
+                        <field name="total_volume"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_logistics_order_tree" model="ir.ui.view">
+        <field name="name">logistics.order.tree</field>
+        <field name="model">logistics.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="supplier_id"/>
+                <field name="customer_id"/>
+                <field name="total_amount"/>
+                <field name="total_weight"/>
+                <field name="total_volume"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
