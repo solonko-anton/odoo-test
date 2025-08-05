@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_logistics_order,access_logistics_order,model_logistics_order,base.group_user,1,1,1,1
+access_logistics_order_table,access_logistics_order_table,model_logistics_order_table,base.group_user,1,1,1,1
+access_logistics_vehicle,access_logistics_vehicle,model_logistics_vehicle,base.group_user,1,1,1,1
+access_logistics_route,access_logistics_route,model_logistics_route,base.group_user,1,1,1,1

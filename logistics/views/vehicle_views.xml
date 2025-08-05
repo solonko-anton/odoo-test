@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_logistics_vehicle_form" model="ir.ui.view">
+        <field name="name">logistics.vehicle.form</field>
+        <field name="model">logistics.vehicle</field>
+        <field name="arch" type="xml">
+            <form string="Автомобіль">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="carrier_id"/>
+                        <field name="max_weight"/>
+                        <field name="max_volume"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_logistics_vehicle_tree" model="ir.ui.view">
+        <field name="name">logistics.vehicle.tree</field>
+        <field name="model">logistics.vehicle</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="carrier_id"/>
+                <field name="max_weight"/>
+                <field name="max_volume"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
